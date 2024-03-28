@@ -38,6 +38,7 @@
             ClientSize = new Size(800, 450);
             Name = "CollectionInventoryForm";
             Text = "Collection Inventory - Version 2.0";
+            Load += CollectionInventoryForm_Load;
             ResumeLayout(false);
         }
 

@@ -1,0 +1,17 @@
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\bin\Debug\net8.0-windows\CollectionInventory.exe
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\bin\Debug\net8.0-windows\CollectionInventory.deps.json
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\bin\Debug\net8.0-windows\CollectionInventory.runtimeconfig.json
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\bin\Debug\net8.0-windows\CollectionInventory.dll
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\bin\Debug\net8.0-windows\CollectionInventory.pdb
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\CollectionInventory.CollectionInventoryForm.resources
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\CollectionInventory.csproj.GenerateResource.cache
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\CollectionInventory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\CollectionInventory.AssemblyInfoInputs.cache
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\CollectionInventory.AssemblyInfo.cs
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\CollectionInventory.csproj.CoreCompileInputs.cache
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\CollectionInventory.sourcelink.json
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\CollectionInventory.dll
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\refint\CollectionInventory.dll
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\CollectionInventory.pdb
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\CollectionInventory.genruntimeconfig.cache
+C:\Users\levij\OneDrive - Chippewa Valley Technical College\Desktop\Projects\CollectionInventory\CollectionInventory\obj\Debug\net8.0-windows\ref\CollectionInventory.dll

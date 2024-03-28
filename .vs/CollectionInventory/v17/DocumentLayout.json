@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|c:\\users\\levij\\onedrive - chippewa valley technical college\\desktop\\projects\\collectioninventory\\collectioninventory\\collectioninventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|solutionrelative:collectioninventory\\collectioninventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|c:\\users\\levij\\onedrive - chippewa valley technical college\\desktop\\projects\\collectioninventory\\collectioninventory\\collectioninventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|solutionrelative:collectioninventory\\collectioninventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CollectionInventoryForm.cs",
+              "DocumentMoniker": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\CollectionInventory\\CollectionInventoryForm.cs",
+              "RelativeDocumentMoniker": "CollectionInventory\\CollectionInventoryForm.cs",
+              "ToolTip": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\CollectionInventory\\CollectionInventoryForm.cs",
+              "RelativeToolTip": "CollectionInventory\\CollectionInventoryForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T22:29:02.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CollectionInventoryForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\CollectionInventory\\CollectionInventoryForm.cs",
               "RelativeDocumentMoniker": "CollectionInventory\\CollectionInventoryForm.cs",
