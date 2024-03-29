@@ -137,16 +137,18 @@
             // 
             // cDescriptionTextBox
             // 
+            cDescriptionTextBox.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cDescriptionTextBox.Location = new Point(115, 65);
             cDescriptionTextBox.Name = "cDescriptionTextBox";
-            cDescriptionTextBox.Size = new Size(249, 28);
+            cDescriptionTextBox.Size = new Size(249, 25);
             cDescriptionTextBox.TabIndex = 3;
             // 
             // cNameTextBox
             // 
+            cNameTextBox.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cNameTextBox.Location = new Point(115, 26);
             cNameTextBox.Name = "cNameTextBox";
-            cNameTextBox.Size = new Size(249, 28);
+            cNameTextBox.Size = new Size(249, 25);
             cNameTextBox.TabIndex = 2;
             // 
             // cDescriptionLabel
@@ -184,16 +186,18 @@
             // 
             // lastNameTextBox
             // 
+            lastNameTextBox.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lastNameTextBox.Location = new Point(116, 59);
             lastNameTextBox.Name = "lastNameTextBox";
-            lastNameTextBox.Size = new Size(248, 28);
+            lastNameTextBox.Size = new Size(248, 25);
             lastNameTextBox.TabIndex = 3;
             // 
             // firstNameTextBox
             // 
+            firstNameTextBox.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             firstNameTextBox.Location = new Point(116, 22);
             firstNameTextBox.Name = "firstNameTextBox";
-            firstNameTextBox.Size = new Size(248, 28);
+            firstNameTextBox.Size = new Size(248, 25);
             firstNameTextBox.TabIndex = 2;
             // 
             // lastNameLabel
@@ -218,11 +222,12 @@
             // 
             // collectionsListBox
             // 
+            collectionsListBox.Font = new Font("Garamond", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             collectionsListBox.FormattingEnabled = true;
-            collectionsListBox.ItemHeight = 20;
+            collectionsListBox.ItemHeight = 18;
             collectionsListBox.Location = new Point(404, 25);
             collectionsListBox.Name = "collectionsListBox";
-            collectionsListBox.Size = new Size(195, 284);
+            collectionsListBox.Size = new Size(195, 274);
             collectionsListBox.TabIndex = 1;
             collectionsListBox.SelectedIndexChanged += collectionsListBox_SelectedIndexChanged;
             // 
@@ -285,38 +290,43 @@
             // 
             profitTextBox.BackColor = Color.MediumTurquoise;
             profitTextBox.Enabled = false;
+            profitTextBox.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             profitTextBox.ForeColor = SystemColors.InactiveCaption;
             profitTextBox.Location = new Point(121, 206);
             profitTextBox.Name = "profitTextBox";
-            profitTextBox.Size = new Size(249, 28);
+            profitTextBox.Size = new Size(249, 25);
             profitTextBox.TabIndex = 9;
             // 
             // currentValueTextBox
             // 
+            currentValueTextBox.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             currentValueTextBox.Location = new Point(121, 164);
             currentValueTextBox.Name = "currentValueTextBox";
-            currentValueTextBox.Size = new Size(249, 28);
+            currentValueTextBox.Size = new Size(249, 25);
             currentValueTextBox.TabIndex = 8;
             // 
             // originalPriceTextBox
             // 
+            originalPriceTextBox.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             originalPriceTextBox.Location = new Point(121, 120);
             originalPriceTextBox.Name = "originalPriceTextBox";
-            originalPriceTextBox.Size = new Size(249, 28);
+            originalPriceTextBox.Size = new Size(249, 25);
             originalPriceTextBox.TabIndex = 7;
             // 
             // itemDescriptionTextBox
             // 
+            itemDescriptionTextBox.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             itemDescriptionTextBox.Location = new Point(121, 76);
             itemDescriptionTextBox.Name = "itemDescriptionTextBox";
-            itemDescriptionTextBox.Size = new Size(249, 28);
+            itemDescriptionTextBox.Size = new Size(249, 25);
             itemDescriptionTextBox.TabIndex = 6;
             // 
             // itemNameTextBox
             // 
+            itemNameTextBox.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             itemNameTextBox.Location = new Point(121, 32);
             itemNameTextBox.Name = "itemNameTextBox";
-            itemNameTextBox.Size = new Size(249, 28);
+            itemNameTextBox.Size = new Size(249, 25);
             itemNameTextBox.TabIndex = 5;
             // 
             // profitLabel
@@ -366,11 +376,12 @@
             // 
             // itemsListBox
             // 
+            itemsListBox.Font = new Font("Garamond", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             itemsListBox.FormattingEnabled = true;
-            itemsListBox.ItemHeight = 20;
+            itemsListBox.ItemHeight = 18;
             itemsListBox.Location = new Point(404, 326);
             itemsListBox.Name = "itemsListBox";
-            itemsListBox.Size = new Size(195, 284);
+            itemsListBox.Size = new Size(195, 274);
             itemsListBox.TabIndex = 3;
             itemsListBox.SelectedIndexChanged += itemsListBox_SelectedIndexChanged;
             // 

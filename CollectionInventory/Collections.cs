@@ -3,7 +3,7 @@
 //Purpose: Manage the collections that belong to owners and are made of items
 
 
-/////////// ****************** NEEDs WORK *********************************
+/////////// ****************** MAY NEED WORK *********************************
 ///
 
 
@@ -22,8 +22,34 @@ namespace CollectionInventory
 
         private string mCollectionName;
         private string mCollectionDescription;
-        private List<string> mItemsList;
-        //private List<string> mItemsList = new List<Items>();
+
+        private List<Items> itemsList = new List<Items>();
+
+        // This function returns a copy of the items list.
+        // A copy is returned specifically to prevent this function from being used to modify the original list
+        // this prevents the necessary processing code contained in AddItems() and RemoveItems() from being 
+        // bypassed accidentally. 
+        public List<Items> getItems()
+        {
+            List<Items> listCopy = new List<Items>(itemsList);
+            return listCopy;
+        }
+
+        // Use this function in order to add items to a collection.
+        public void AddItems(Items item)
+        {
+            itemsList.Add(item);
+        }
+
+        //Use this function to remove items from a collection
+        public void RemoveItems(Items items) 
+        { 
+            if (itemsList.Contains(items))
+            {
+                itemsList.Remove(items);
+            }
+            
+        }
 
         public string FirstName 
             { get { return mFirstName; } set {  mFirstName = value; } }
@@ -37,44 +63,9 @@ namespace CollectionInventory
         public string CollectionDescription 
             {  get { return mCollectionDescription; } set { mCollectionDescription = value; } }
 
-        public List<string> ItemsList 
-            { get { return mItemsList; } set { mItemsList = value; } }
 
-        ////Adds items to the collection
-        //public void AddItem(string item)
-        //{
-        //    Items.Add(item);
-        //}
 
-        // Default Constructor
-        public Collections()
-        {
-            mFirstName = string.Empty;
-            mLastName = string.Empty;
-            mCollectionName = string.Empty;
-            mCollectionDescription = string.Empty;
-            mItemsList = new List<string>();
-            //for (int count = 0; count  < mItemsList.Count; count++)
-            //{
-            //    mItemsList.Add(string.Empty);
-            //}
-        }
-
-        //Overload Constructor
-        public Collections(string FirstName)
-        {
-            mFirstName = FirstName;
-            mLastName = string.Empty;
-            mCollectionName = string.Empty;
-            mCollectionDescription = string.Empty;
-            mItemsList = new List<string>();
-            //for (int count = 0; count  < mItemsList.Count; count++)
-            //{
-            //    mItemsList.Add(string.Empty);
-            //}
-        }
-
-        public string DisplayCollection()
+        public override string ToString()
         {
             return mFirstName + " " + mLastName + "'s " + mCollectionName;
         }

@@ -6,27 +6,99 @@
 //allows multiple users to inventory their various collections of different objects ' and add
 //various items into that collection. Use a database to store this information.
 
+using System.ComponentModel;
 using System.Drawing.Text;
 
 namespace CollectionInventory
 {
     public partial class CollectionInventoryForm : Form
     {
+        //class scoped variables
+        private Collections selectedCollection;
+        private Items selectedItem;
+
+        private BindingList<Collections> collectionsList = new BindingList<Collections>();
+        private BindingList<Items> itemsList = new BindingList<Items>();
+
         public CollectionInventoryForm()
         {
             InitializeComponent();
         }
 
-
-
         private void CollectionInventoryForm_Load(object sender, EventArgs e)
         {
+            collectionsListBox.DataSource = collectionsList;
+
+            itemsListBox.DataSource = itemsList;
+
+            //DatabaseReload()
 
         }
 
         private void addCollectionButton_Click(object sender, EventArgs e)
         {
+            // Declare Variables
+            Collections newCollection = new Collections();
 
+            //Nested If statement used to validate the data that is entered by user, if not give error message
+            if (firstNameTextBox.Text != string.Empty)
+            {
+                if (lastNameTextBox.Text != string.Empty)
+                {
+                    if (cNameTextBox.Text != string.Empty)
+                    {
+                        if (cDescriptionTextBox.Text != string.Empty)
+                        {
+
+                            // Good code goes here if all data is validated
+                            // Set user entered data to objects
+                            newCollection.FirstName = firstNameTextBox.Text;
+                            newCollection.LastName = lastNameTextBox.Text;
+
+                            newCollection.CollectionName = cNameTextBox.Text;
+                            newCollection.CollectionDescription = cDescriptionTextBox.Text;
+
+                            //Set selected object and add data to list
+                            selectedCollection = newCollection;
+                            collectionsList.Add(newCollection);
+                            collectionsListBox.SelectedItem = selectedCollection;
+
+                            //update GUI
+                            //refreshDisplay()
+
+                            //Reset textboxes for next entry
+                            ClearCollectionBoxes();
+                            ClearItemBoxes();
+
+                            //Error Messages clear and refocus to textbox for user efficiency
+                        } 
+                        else
+                        {
+                            MessageBox.Show("Please enter a valid Collection Description.");
+                            cDescriptionTextBox.Clear();
+                            cDescriptionTextBox.Focus();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please enter a valid Collection Name.");
+                        cNameTextBox.Clear();
+                        cNameTextBox.Focus();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a valid Last Name.");
+                    lastNameTextBox.Clear();
+                    lastNameTextBox.Focus();
+                }
+            } 
+            else
+            {
+                MessageBox.Show("Please enter a valid First Name.");
+                firstNameTextBox.Clear();
+                firstNameTextBox.Focus();
+            }
         }
 
         private void clearCollectionButton_Click(object sender, EventArgs e)
@@ -116,6 +188,27 @@ namespace CollectionInventory
             //{
             //    profitTextBox.BackColor = Color.MediumTurquoise;
             //}
+        }
+
+        private void RefreshDisplay()
+        {
+            //Refresh function used for displaying current data, can be called
+            DisplayCollections();
+            //DisplayItems();
+        }
+
+        private void DisplayCollections()
+        {
+            //Private function used for displaying collection information, can be called in nested if easier
+            if (selectedCollection != null)
+            {
+                firstNameTextBox.Text = selectedCollection.FirstName;
+                lastNameTextBox.Text = selectedCollection.LastName;
+
+                collectionsListBox.SelectedItem = selectedCollection;
+                cNameTextBox.Text = selectedCollection.CollectionName;
+                cDescriptionTextBox.Text = selectedCollection.CollectionDescription;
+            }
         }
     }
 }

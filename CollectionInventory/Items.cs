@@ -58,7 +58,7 @@ namespace CollectionInventory
             mItemProfit = 0;
         }
 
-        public string DisplayItem()
+        public override string ToString()
         {
             // This will provide my formatted data that will be displayed in the listbox
 
