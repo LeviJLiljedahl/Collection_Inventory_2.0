@@ -20,12 +20,52 @@ namespace CollectionInventory
 
         }
 
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void addCollectionButton_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
+        private void clearCollectionButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteCollectionButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void collectionsListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addItemButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clearItemButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteItemButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void itemsListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveToDatabaseButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteFromDatabaseTextBox_Click(object sender, EventArgs e)
         {
 
         }

@@ -94,6 +94,7 @@
             deleteCollectionButton.TabIndex = 4;
             deleteCollectionButton.Text = "Delete";
             deleteCollectionButton.UseVisualStyleBackColor = false;
+            deleteCollectionButton.Click += deleteCollectionButton_Click;
             // 
             // clearCollectionButton
             // 
@@ -105,6 +106,7 @@
             clearCollectionButton.TabIndex = 3;
             clearCollectionButton.Text = "Clear Boxes";
             clearCollectionButton.UseVisualStyleBackColor = false;
+            clearCollectionButton.Click += clearCollectionButton_Click;
             // 
             // addCollectionButton
             // 
@@ -116,6 +118,7 @@
             addCollectionButton.TabIndex = 2;
             addCollectionButton.Text = "Add Collection";
             addCollectionButton.UseVisualStyleBackColor = false;
+            addCollectionButton.Click += addCollectionButton_Click;
             // 
             // collectionsGroupBox
             // 
@@ -221,6 +224,7 @@
             collectionsListBox.Name = "collectionsListBox";
             collectionsListBox.Size = new Size(195, 284);
             collectionsListBox.TabIndex = 1;
+            collectionsListBox.SelectedIndexChanged += collectionsListBox_SelectedIndexChanged;
             // 
             // itemGroupBox
             // 
@@ -243,7 +247,6 @@
             itemGroupBox.TabIndex = 2;
             itemGroupBox.TabStop = false;
             itemGroupBox.Text = "Add an item to your collection";
-            itemGroupBox.Enter += groupBox2_Enter;
             // 
             // deleteItemButton
             // 
@@ -254,6 +257,7 @@
             deleteItemButton.TabIndex = 12;
             deleteItemButton.Text = "Delete Item";
             deleteItemButton.UseVisualStyleBackColor = false;
+            deleteItemButton.Click += deleteItemButton_Click;
             // 
             // clearItemButton
             // 
@@ -264,6 +268,7 @@
             clearItemButton.TabIndex = 11;
             clearItemButton.Text = "Clear Boxes";
             clearItemButton.UseVisualStyleBackColor = false;
+            clearItemButton.Click += clearItemButton_Click;
             // 
             // addItemButton
             // 
@@ -274,9 +279,13 @@
             addItemButton.TabIndex = 10;
             addItemButton.Text = "Add Item";
             addItemButton.UseVisualStyleBackColor = false;
+            addItemButton.Click += addItemButton_Click;
             // 
             // profitTextBox
             // 
+            profitTextBox.BackColor = Color.MediumTurquoise;
+            profitTextBox.Enabled = false;
+            profitTextBox.ForeColor = SystemColors.InactiveCaption;
             profitTextBox.Location = new Point(121, 206);
             profitTextBox.Name = "profitTextBox";
             profitTextBox.Size = new Size(249, 28);
@@ -363,7 +372,7 @@
             itemsListBox.Name = "itemsListBox";
             itemsListBox.Size = new Size(195, 284);
             itemsListBox.TabIndex = 3;
-            itemsListBox.SelectedIndexChanged += listBox2_SelectedIndexChanged;
+            itemsListBox.SelectedIndexChanged += itemsListBox_SelectedIndexChanged;
             // 
             // databaseTextBox
             // 
@@ -385,6 +394,7 @@
             deleteFromDatabaseTextBox.TabIndex = 1;
             deleteFromDatabaseTextBox.Text = "Delete From Database";
             deleteFromDatabaseTextBox.UseVisualStyleBackColor = false;
+            deleteFromDatabaseTextBox.Click += deleteFromDatabaseTextBox_Click;
             // 
             // saveToDatabaseButton
             // 
@@ -395,6 +405,7 @@
             saveToDatabaseButton.TabIndex = 0;
             saveToDatabaseButton.Text = "Save to Database";
             saveToDatabaseButton.UseVisualStyleBackColor = false;
+            saveToDatabaseButton.Click += saveToDatabaseButton_Click;
             // 
             // CollectionInventoryForm
             // 
