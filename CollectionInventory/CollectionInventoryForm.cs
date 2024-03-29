@@ -109,7 +109,18 @@ namespace CollectionInventory
 
         private void deleteCollectionButton_Click(object sender, EventArgs e)
         {
+            if(collectionsListBox.SelectedItem != null)
+            {
+                collectionsList.Remove((Collections) collectionsListBox.SelectedItem);
+                selectedCollection = (Collections) collectionsListBox.SelectedItem;
 
+                RefreshDisplay();
+                ClearCollectionBoxes();
+            } 
+            else
+            {
+                MessageBox.Show("You must select a budget category to delte");
+            }
         }
 
         private void collectionsListBox_SelectedIndexChanged(object sender, EventArgs e)
