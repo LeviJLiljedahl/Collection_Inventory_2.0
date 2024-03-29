@@ -29,116 +29,148 @@
         private void InitializeComponent()
         {
             collectionGroupBox = new GroupBox();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            groupBox1 = new GroupBox();
+            deleteCollectionButton = new Button();
+            clearCollectionButton = new Button();
+            addCollectionButton = new Button();
+            collectionsGroupBox = new GroupBox();
+            cDescriptionTextBox = new TextBox();
+            cNameTextBox = new TextBox();
+            cDescriptionLabel = new Label();
+            cNameLabel = new Label();
             OwnersGroupBox = new GroupBox();
-            label2 = new Label();
-            label1 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            listBox1 = new ListBox();
-            groupBox2 = new GroupBox();
-            listBox2 = new ListBox();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            groupBox3 = new GroupBox();
-            button7 = new Button();
-            button8 = new Button();
+            lastNameTextBox = new TextBox();
+            firstNameTextBox = new TextBox();
+            lastNameLabel = new Label();
+            firstNameLabel = new Label();
+            collectionsListBox = new ListBox();
+            itemGroupBox = new GroupBox();
+            deleteItemButton = new Button();
+            clearItemButton = new Button();
+            addItemButton = new Button();
+            profitTextBox = new TextBox();
+            currentValueTextBox = new TextBox();
+            originalPriceTextBox = new TextBox();
+            itemDescriptionTextBox = new TextBox();
+            itemNameTextBox = new TextBox();
+            profitLabel = new Label();
+            currentValueLabel = new Label();
+            originalPriceLabel = new Label();
+            itemDescriptionLabel = new Label();
+            itemNameLabel = new Label();
+            itemsListBox = new ListBox();
+            databaseTextBox = new GroupBox();
+            deleteFromDatabaseTextBox = new Button();
+            saveToDatabaseButton = new Button();
             collectionGroupBox.SuspendLayout();
-            groupBox1.SuspendLayout();
+            collectionsGroupBox.SuspendLayout();
             OwnersGroupBox.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
+            itemGroupBox.SuspendLayout();
+            databaseTextBox.SuspendLayout();
             SuspendLayout();
             // 
             // collectionGroupBox
             // 
-            collectionGroupBox.Controls.Add(button3);
-            collectionGroupBox.Controls.Add(button2);
-            collectionGroupBox.Controls.Add(button1);
-            collectionGroupBox.Controls.Add(groupBox1);
+            collectionGroupBox.Controls.Add(deleteCollectionButton);
+            collectionGroupBox.Controls.Add(clearCollectionButton);
+            collectionGroupBox.Controls.Add(addCollectionButton);
+            collectionGroupBox.Controls.Add(collectionsGroupBox);
             collectionGroupBox.Controls.Add(OwnersGroupBox);
             collectionGroupBox.Location = new Point(13, 13);
             collectionGroupBox.Margin = new Padding(4);
             collectionGroupBox.Name = "collectionGroupBox";
             collectionGroupBox.Padding = new Padding(4);
-            collectionGroupBox.Size = new Size(385, 308);
+            collectionGroupBox.Size = new Size(385, 296);
             collectionGroupBox.TabIndex = 0;
             collectionGroupBox.TabStop = false;
             collectionGroupBox.Text = "Add information about your collection";
             // 
-            // button3
+            // deleteCollectionButton
             // 
-            button3.BackColor = Color.MediumTurquoise;
-            button3.Location = new Point(258, 259);
-            button3.Margin = new Padding(4);
-            button3.Name = "button3";
-            button3.Size = new Size(118, 41);
-            button3.TabIndex = 4;
-            button3.Text = "Delete";
-            button3.UseVisualStyleBackColor = false;
+            deleteCollectionButton.BackColor = Color.MediumTurquoise;
+            deleteCollectionButton.Location = new Point(258, 248);
+            deleteCollectionButton.Margin = new Padding(4);
+            deleteCollectionButton.Name = "deleteCollectionButton";
+            deleteCollectionButton.Size = new Size(118, 41);
+            deleteCollectionButton.TabIndex = 4;
+            deleteCollectionButton.Text = "Delete";
+            deleteCollectionButton.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // clearCollectionButton
             // 
-            button2.BackColor = Color.MediumTurquoise;
-            button2.Location = new Point(132, 259);
-            button2.Margin = new Padding(4);
-            button2.Name = "button2";
-            button2.Size = new Size(118, 41);
-            button2.TabIndex = 3;
-            button2.Text = "Clear Boxes";
-            button2.UseVisualStyleBackColor = false;
+            clearCollectionButton.BackColor = Color.MediumTurquoise;
+            clearCollectionButton.Location = new Point(132, 248);
+            clearCollectionButton.Margin = new Padding(4);
+            clearCollectionButton.Name = "clearCollectionButton";
+            clearCollectionButton.Size = new Size(118, 41);
+            clearCollectionButton.TabIndex = 3;
+            clearCollectionButton.Text = "Clear Boxes";
+            clearCollectionButton.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // addCollectionButton
             // 
-            button1.BackColor = Color.MediumTurquoise;
-            button1.Location = new Point(6, 259);
-            button1.Margin = new Padding(4);
-            button1.Name = "button1";
-            button1.Size = new Size(118, 41);
-            button1.TabIndex = 2;
-            button1.Text = "Add Collection";
-            button1.UseVisualStyleBackColor = false;
+            addCollectionButton.BackColor = Color.MediumTurquoise;
+            addCollectionButton.Location = new Point(6, 248);
+            addCollectionButton.Margin = new Padding(4);
+            addCollectionButton.Name = "addCollectionButton";
+            addCollectionButton.Size = new Size(118, 41);
+            addCollectionButton.TabIndex = 2;
+            addCollectionButton.Text = "Add Collection";
+            addCollectionButton.UseVisualStyleBackColor = false;
             // 
-            // groupBox1
+            // collectionsGroupBox
             // 
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Location = new Point(6, 146);
-            groupBox1.Margin = new Padding(4);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4);
-            groupBox1.Size = new Size(371, 105);
-            groupBox1.TabIndex = 1;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Collection Information";
+            collectionsGroupBox.Controls.Add(cDescriptionTextBox);
+            collectionsGroupBox.Controls.Add(cNameTextBox);
+            collectionsGroupBox.Controls.Add(cDescriptionLabel);
+            collectionsGroupBox.Controls.Add(cNameLabel);
+            collectionsGroupBox.Location = new Point(6, 135);
+            collectionsGroupBox.Margin = new Padding(4);
+            collectionsGroupBox.Name = "collectionsGroupBox";
+            collectionsGroupBox.Padding = new Padding(4);
+            collectionsGroupBox.Size = new Size(371, 105);
+            collectionsGroupBox.TabIndex = 1;
+            collectionsGroupBox.TabStop = false;
+            collectionsGroupBox.Text = "Collection Information";
+            // 
+            // cDescriptionTextBox
+            // 
+            cDescriptionTextBox.Location = new Point(115, 65);
+            cDescriptionTextBox.Name = "cDescriptionTextBox";
+            cDescriptionTextBox.Size = new Size(249, 28);
+            cDescriptionTextBox.TabIndex = 3;
+            // 
+            // cNameTextBox
+            // 
+            cNameTextBox.Location = new Point(115, 26);
+            cNameTextBox.Name = "cNameTextBox";
+            cNameTextBox.Size = new Size(249, 28);
+            cNameTextBox.TabIndex = 2;
+            // 
+            // cDescriptionLabel
+            // 
+            cDescriptionLabel.AutoSize = true;
+            cDescriptionLabel.Location = new Point(21, 68);
+            cDescriptionLabel.Name = "cDescriptionLabel";
+            cDescriptionLabel.Size = new Size(88, 20);
+            cDescriptionLabel.TabIndex = 1;
+            cDescriptionLabel.Text = "Description:";
+            // 
+            // cNameLabel
+            // 
+            cNameLabel.AutoSize = true;
+            cNameLabel.Location = new Point(55, 29);
+            cNameLabel.Name = "cNameLabel";
+            cNameLabel.Size = new Size(54, 20);
+            cNameLabel.TabIndex = 0;
+            cNameLabel.Text = "Name:";
             // 
             // OwnersGroupBox
             // 
-            OwnersGroupBox.Controls.Add(textBox2);
-            OwnersGroupBox.Controls.Add(textBox1);
-            OwnersGroupBox.Controls.Add(label2);
-            OwnersGroupBox.Controls.Add(label1);
-            OwnersGroupBox.Location = new Point(6, 35);
+            OwnersGroupBox.Controls.Add(lastNameTextBox);
+            OwnersGroupBox.Controls.Add(firstNameTextBox);
+            OwnersGroupBox.Controls.Add(lastNameLabel);
+            OwnersGroupBox.Controls.Add(firstNameLabel);
+            OwnersGroupBox.Location = new Point(6, 24);
             OwnersGroupBox.Margin = new Padding(4);
             OwnersGroupBox.Name = "OwnersGroupBox";
             OwnersGroupBox.Padding = new Padding(4);
@@ -147,263 +179,233 @@
             OwnersGroupBox.TabStop = false;
             OwnersGroupBox.Text = "Owner's Information";
             // 
-            // label2
+            // lastNameTextBox
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(21, 62);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(88, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Last Name:";
+            lastNameTextBox.Location = new Point(116, 59);
+            lastNameTextBox.Name = "lastNameTextBox";
+            lastNameTextBox.Size = new Size(248, 28);
+            lastNameTextBox.TabIndex = 3;
             // 
-            // label1
+            // firstNameTextBox
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(16, 25);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(93, 20);
-            label1.TabIndex = 0;
-            label1.Text = "First Name:";
+            firstNameTextBox.Location = new Point(116, 22);
+            firstNameTextBox.Name = "firstNameTextBox";
+            firstNameTextBox.Size = new Size(248, 28);
+            firstNameTextBox.TabIndex = 2;
             // 
-            // label3
+            // lastNameLabel
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(55, 29);
-            label3.Name = "label3";
-            label3.Size = new Size(54, 20);
-            label3.TabIndex = 0;
-            label3.Text = "Name:";
+            lastNameLabel.AutoSize = true;
+            lastNameLabel.Location = new Point(21, 62);
+            lastNameLabel.Margin = new Padding(4, 0, 4, 0);
+            lastNameLabel.Name = "lastNameLabel";
+            lastNameLabel.Size = new Size(88, 20);
+            lastNameLabel.TabIndex = 1;
+            lastNameLabel.Text = "Last Name:";
             // 
-            // label4
+            // firstNameLabel
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(21, 68);
-            label4.Name = "label4";
-            label4.Size = new Size(88, 20);
-            label4.TabIndex = 1;
-            label4.Text = "Description:";
+            firstNameLabel.AutoSize = true;
+            firstNameLabel.Location = new Point(16, 25);
+            firstNameLabel.Margin = new Padding(4, 0, 4, 0);
+            firstNameLabel.Name = "firstNameLabel";
+            firstNameLabel.Size = new Size(93, 20);
+            firstNameLabel.TabIndex = 0;
+            firstNameLabel.Text = "First Name:";
             // 
-            // textBox1
+            // collectionsListBox
             // 
-            textBox1.Location = new Point(116, 22);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(248, 28);
-            textBox1.TabIndex = 2;
+            collectionsListBox.FormattingEnabled = true;
+            collectionsListBox.ItemHeight = 20;
+            collectionsListBox.Location = new Point(404, 25);
+            collectionsListBox.Name = "collectionsListBox";
+            collectionsListBox.Size = new Size(195, 284);
+            collectionsListBox.TabIndex = 1;
             // 
-            // textBox2
+            // itemGroupBox
             // 
-            textBox2.Location = new Point(116, 59);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(248, 28);
-            textBox2.TabIndex = 3;
+            itemGroupBox.Controls.Add(deleteItemButton);
+            itemGroupBox.Controls.Add(clearItemButton);
+            itemGroupBox.Controls.Add(addItemButton);
+            itemGroupBox.Controls.Add(profitTextBox);
+            itemGroupBox.Controls.Add(currentValueTextBox);
+            itemGroupBox.Controls.Add(originalPriceTextBox);
+            itemGroupBox.Controls.Add(itemDescriptionTextBox);
+            itemGroupBox.Controls.Add(itemNameTextBox);
+            itemGroupBox.Controls.Add(profitLabel);
+            itemGroupBox.Controls.Add(currentValueLabel);
+            itemGroupBox.Controls.Add(originalPriceLabel);
+            itemGroupBox.Controls.Add(itemDescriptionLabel);
+            itemGroupBox.Controls.Add(itemNameLabel);
+            itemGroupBox.Location = new Point(13, 316);
+            itemGroupBox.Name = "itemGroupBox";
+            itemGroupBox.Size = new Size(385, 294);
+            itemGroupBox.TabIndex = 2;
+            itemGroupBox.TabStop = false;
+            itemGroupBox.Text = "Add an item to your collection";
+            itemGroupBox.Enter += groupBox2_Enter;
             // 
-            // textBox3
+            // deleteItemButton
             // 
-            textBox3.Location = new Point(115, 26);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(249, 28);
-            textBox3.TabIndex = 2;
+            deleteItemButton.BackColor = Color.MediumTurquoise;
+            deleteItemButton.Location = new Point(254, 247);
+            deleteItemButton.Name = "deleteItemButton";
+            deleteItemButton.Size = new Size(118, 41);
+            deleteItemButton.TabIndex = 12;
+            deleteItemButton.Text = "Delete Item";
+            deleteItemButton.UseVisualStyleBackColor = false;
             // 
-            // textBox4
+            // clearItemButton
             // 
-            textBox4.Location = new Point(115, 65);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(249, 28);
-            textBox4.TabIndex = 3;
+            clearItemButton.BackColor = Color.MediumTurquoise;
+            clearItemButton.Location = new Point(130, 247);
+            clearItemButton.Name = "clearItemButton";
+            clearItemButton.Size = new Size(118, 41);
+            clearItemButton.TabIndex = 11;
+            clearItemButton.Text = "Clear Boxes";
+            clearItemButton.UseVisualStyleBackColor = false;
             // 
-            // listBox1
+            // addItemButton
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
-            listBox1.Location = new Point(405, 37);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(195, 284);
-            listBox1.TabIndex = 1;
+            addItemButton.BackColor = Color.MediumTurquoise;
+            addItemButton.Location = new Point(6, 247);
+            addItemButton.Name = "addItemButton";
+            addItemButton.Size = new Size(118, 41);
+            addItemButton.TabIndex = 10;
+            addItemButton.Text = "Add Item";
+            addItemButton.UseVisualStyleBackColor = false;
             // 
-            // groupBox2
+            // profitTextBox
             // 
-            groupBox2.Controls.Add(button6);
-            groupBox2.Controls.Add(button5);
-            groupBox2.Controls.Add(button4);
-            groupBox2.Controls.Add(textBox9);
-            groupBox2.Controls.Add(textBox8);
-            groupBox2.Controls.Add(textBox7);
-            groupBox2.Controls.Add(textBox6);
-            groupBox2.Controls.Add(textBox5);
-            groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(label8);
-            groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Location = new Point(13, 328);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(385, 285);
-            groupBox2.TabIndex = 2;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Add an item to your collection";
+            profitTextBox.Location = new Point(121, 206);
+            profitTextBox.Name = "profitTextBox";
+            profitTextBox.Size = new Size(249, 28);
+            profitTextBox.TabIndex = 9;
             // 
-            // listBox2
+            // currentValueTextBox
             // 
-            listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 20;
-            listBox2.Location = new Point(405, 349);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(195, 264);
-            listBox2.TabIndex = 3;
+            currentValueTextBox.Location = new Point(121, 164);
+            currentValueTextBox.Name = "currentValueTextBox";
+            currentValueTextBox.Size = new Size(249, 28);
+            currentValueTextBox.TabIndex = 8;
             // 
-            // label5
+            // originalPriceTextBox
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(25, 35);
-            label5.Name = "label5";
-            label5.Size = new Size(90, 20);
-            label5.TabIndex = 0;
-            label5.Text = "Item Name:";
+            originalPriceTextBox.Location = new Point(121, 120);
+            originalPriceTextBox.Name = "originalPriceTextBox";
+            originalPriceTextBox.Size = new Size(249, 28);
+            originalPriceTextBox.TabIndex = 7;
             // 
-            // label6
+            // itemDescriptionTextBox
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(27, 79);
-            label6.Name = "label6";
-            label6.Size = new Size(88, 20);
-            label6.TabIndex = 1;
-            label6.Text = "Description:";
+            itemDescriptionTextBox.Location = new Point(121, 76);
+            itemDescriptionTextBox.Name = "itemDescriptionTextBox";
+            itemDescriptionTextBox.Size = new Size(249, 28);
+            itemDescriptionTextBox.TabIndex = 6;
             // 
-            // label7
+            // itemNameTextBox
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(10, 123);
-            label7.Name = "label7";
-            label7.Size = new Size(105, 20);
-            label7.TabIndex = 2;
-            label7.Text = "Original Price:";
+            itemNameTextBox.Location = new Point(121, 32);
+            itemNameTextBox.Name = "itemNameTextBox";
+            itemNameTextBox.Size = new Size(249, 28);
+            itemNameTextBox.TabIndex = 5;
             // 
-            // label8
+            // profitLabel
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(10, 167);
-            label8.Name = "label8";
-            label8.Size = new Size(105, 20);
-            label8.TabIndex = 3;
-            label8.Text = "Current Value:";
+            profitLabel.AutoSize = true;
+            profitLabel.Location = new Point(61, 209);
+            profitLabel.Name = "profitLabel";
+            profitLabel.Size = new Size(54, 20);
+            profitLabel.TabIndex = 4;
+            profitLabel.Text = "Profit:";
             // 
-            // label9
+            // currentValueLabel
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(61, 209);
-            label9.Name = "label9";
-            label9.Size = new Size(54, 20);
-            label9.TabIndex = 4;
-            label9.Text = "Profit:";
+            currentValueLabel.AutoSize = true;
+            currentValueLabel.Location = new Point(10, 167);
+            currentValueLabel.Name = "currentValueLabel";
+            currentValueLabel.Size = new Size(105, 20);
+            currentValueLabel.TabIndex = 3;
+            currentValueLabel.Text = "Current Value:";
             // 
-            // textBox5
+            // originalPriceLabel
             // 
-            textBox5.Location = new Point(121, 32);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(249, 28);
-            textBox5.TabIndex = 5;
+            originalPriceLabel.AutoSize = true;
+            originalPriceLabel.Location = new Point(10, 123);
+            originalPriceLabel.Name = "originalPriceLabel";
+            originalPriceLabel.Size = new Size(105, 20);
+            originalPriceLabel.TabIndex = 2;
+            originalPriceLabel.Text = "Original Price:";
             // 
-            // textBox6
+            // itemDescriptionLabel
             // 
-            textBox6.Location = new Point(121, 76);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(249, 28);
-            textBox6.TabIndex = 6;
+            itemDescriptionLabel.AutoSize = true;
+            itemDescriptionLabel.Location = new Point(27, 79);
+            itemDescriptionLabel.Name = "itemDescriptionLabel";
+            itemDescriptionLabel.Size = new Size(88, 20);
+            itemDescriptionLabel.TabIndex = 1;
+            itemDescriptionLabel.Text = "Description:";
             // 
-            // textBox7
+            // itemNameLabel
             // 
-            textBox7.Location = new Point(121, 120);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(249, 28);
-            textBox7.TabIndex = 7;
+            itemNameLabel.AutoSize = true;
+            itemNameLabel.Location = new Point(25, 35);
+            itemNameLabel.Name = "itemNameLabel";
+            itemNameLabel.Size = new Size(90, 20);
+            itemNameLabel.TabIndex = 0;
+            itemNameLabel.Text = "Item Name:";
             // 
-            // textBox8
+            // itemsListBox
             // 
-            textBox8.Location = new Point(121, 164);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(249, 28);
-            textBox8.TabIndex = 8;
+            itemsListBox.FormattingEnabled = true;
+            itemsListBox.ItemHeight = 20;
+            itemsListBox.Location = new Point(404, 326);
+            itemsListBox.Name = "itemsListBox";
+            itemsListBox.Size = new Size(195, 284);
+            itemsListBox.TabIndex = 3;
+            itemsListBox.SelectedIndexChanged += listBox2_SelectedIndexChanged;
             // 
-            // textBox9
+            // databaseTextBox
             // 
-            textBox9.Location = new Point(121, 206);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(249, 28);
-            textBox9.TabIndex = 9;
+            databaseTextBox.Controls.Add(deleteFromDatabaseTextBox);
+            databaseTextBox.Controls.Add(saveToDatabaseButton);
+            databaseTextBox.Location = new Point(12, 616);
+            databaseTextBox.Name = "databaseTextBox";
+            databaseTextBox.Size = new Size(587, 77);
+            databaseTextBox.TabIndex = 4;
+            databaseTextBox.TabStop = false;
+            databaseTextBox.Text = "Select an Item and its Collection. Then Save it to the Database";
             // 
-            // button4
+            // deleteFromDatabaseTextBox
             // 
-            button4.BackColor = Color.MediumTurquoise;
-            button4.Location = new Point(6, 238);
-            button4.Name = "button4";
-            button4.Size = new Size(118, 41);
-            button4.TabIndex = 10;
-            button4.Text = "Add Item";
-            button4.UseVisualStyleBackColor = false;
+            deleteFromDatabaseTextBox.BackColor = Color.MediumTurquoise;
+            deleteFromDatabaseTextBox.Location = new Point(327, 26);
+            deleteFromDatabaseTextBox.Name = "deleteFromDatabaseTextBox";
+            deleteFromDatabaseTextBox.Size = new Size(184, 41);
+            deleteFromDatabaseTextBox.TabIndex = 1;
+            deleteFromDatabaseTextBox.Text = "Delete From Database";
+            deleteFromDatabaseTextBox.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // saveToDatabaseButton
             // 
-            button5.BackColor = Color.MediumTurquoise;
-            button5.Location = new Point(130, 238);
-            button5.Name = "button5";
-            button5.Size = new Size(118, 41);
-            button5.TabIndex = 11;
-            button5.Text = "Clear Boxes";
-            button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.MediumTurquoise;
-            button6.Location = new Point(254, 238);
-            button6.Name = "button6";
-            button6.Size = new Size(118, 41);
-            button6.TabIndex = 12;
-            button6.Text = "Delete Item";
-            button6.UseVisualStyleBackColor = false;
-            // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(button8);
-            groupBox3.Controls.Add(button7);
-            groupBox3.Location = new Point(13, 619);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(587, 77);
-            groupBox3.TabIndex = 4;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Select an Item and its Collection. Then Save it to the Database";
-            // 
-            // button7
-            // 
-            button7.BackColor = Color.MediumTurquoise;
-            button7.Location = new Point(72, 26);
-            button7.Name = "button7";
-            button7.Size = new Size(184, 41);
-            button7.TabIndex = 0;
-            button7.Text = "Save to Database";
-            button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            button8.BackColor = Color.MediumTurquoise;
-            button8.Location = new Point(327, 26);
-            button8.Name = "button8";
-            button8.Size = new Size(184, 41);
-            button8.TabIndex = 1;
-            button8.Text = "Delete From Database";
-            button8.UseVisualStyleBackColor = false;
+            saveToDatabaseButton.BackColor = Color.MediumTurquoise;
+            saveToDatabaseButton.Location = new Point(72, 26);
+            saveToDatabaseButton.Name = "saveToDatabaseButton";
+            saveToDatabaseButton.Size = new Size(184, 41);
+            saveToDatabaseButton.TabIndex = 0;
+            saveToDatabaseButton.Text = "Save to Database";
+            saveToDatabaseButton.UseVisualStyleBackColor = false;
             // 
             // CollectionInventoryForm
             // 
             AutoScaleDimensions = new SizeF(10F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumTurquoise;
-            ClientSize = new Size(611, 701);
-            Controls.Add(groupBox3);
-            Controls.Add(listBox2);
-            Controls.Add(groupBox2);
-            Controls.Add(listBox1);
+            ClientSize = new Size(611, 700);
+            Controls.Add(databaseTextBox);
+            Controls.Add(itemsListBox);
+            Controls.Add(itemGroupBox);
+            Controls.Add(collectionsListBox);
             Controls.Add(collectionGroupBox);
             Font = new Font("Harlow Solid Italic", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
@@ -411,50 +413,50 @@
             Text = "Collection Inventory - Version 2.0";
             Load += CollectionInventoryForm_Load;
             collectionGroupBox.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            collectionsGroupBox.ResumeLayout(false);
+            collectionsGroupBox.PerformLayout();
             OwnersGroupBox.ResumeLayout(false);
             OwnersGroupBox.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
+            itemGroupBox.ResumeLayout(false);
+            itemGroupBox.PerformLayout();
+            databaseTextBox.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private GroupBox collectionGroupBox;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private GroupBox groupBox1;
+        private Button deleteCollectionButton;
+        private Button clearCollectionButton;
+        private Button addCollectionButton;
+        private GroupBox collectionsGroupBox;
         private GroupBox OwnersGroupBox;
-        private Label label2;
-        private Label label1;
-        private TextBox textBox3;
-        private Label label4;
-        private Label label3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private TextBox textBox4;
-        private ListBox listBox1;
-        private GroupBox groupBox2;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private ListBox listBox2;
-        private Button button6;
-        private Button button5;
-        private Button button4;
-        private TextBox textBox9;
-        private TextBox textBox8;
-        private TextBox textBox7;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private GroupBox groupBox3;
-        private Button button8;
-        private Button button7;
+        private Label lastNameLabel;
+        private Label firstNameLabel;
+        private TextBox cNameTextBox;
+        private Label cDescriptionLabel;
+        private Label cNameLabel;
+        private TextBox lastNameTextBox;
+        private TextBox firstNameTextBox;
+        private TextBox cDescriptionTextBox;
+        private ListBox collectionsListBox;
+        private GroupBox itemGroupBox;
+        private Label profitLabel;
+        private Label currentValueLabel;
+        private Label originalPriceLabel;
+        private Label itemDescriptionLabel;
+        private Label itemNameLabel;
+        private ListBox itemsListBox;
+        private Button deleteItemButton;
+        private Button clearItemButton;
+        private Button addItemButton;
+        private TextBox profitTextBox;
+        private TextBox currentValueTextBox;
+        private TextBox originalPriceTextBox;
+        private TextBox itemDescriptionTextBox;
+        private TextBox itemNameTextBox;
+        private GroupBox databaseTextBox;
+        private Button deleteFromDatabaseTextBox;
+        private Button saveToDatabaseButton;
     }
 }
