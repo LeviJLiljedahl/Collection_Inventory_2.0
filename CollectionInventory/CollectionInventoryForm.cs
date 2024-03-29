@@ -143,12 +143,90 @@ namespace CollectionInventory
                 }
 
                 RefreshDisplay();
+                ClearItemBoxes();
             }
         }
 
         private void addItemButton_Click(object sender, EventArgs e)
         {
+            Items newItem = new Items();
 
+            decimal inputPrice = 0;
+            decimal inputValue = 0;
+
+            bool isValidPrice;
+            bool isValidValue;
+
+            // Validate inputs here
+            isValidPrice = Decimal.TryParse(originalPriceTextBox.Text, out inputPrice);
+            isValidValue = Decimal.TryParse(currentValueTextBox.Text,out inputValue);
+
+            if (selectedCollection != null)
+            {
+                if (itemNameTextBox.Text != string.Empty)
+                {
+                    if (itemDescriptionTextBox.Text != string.Empty)
+                    {
+                        if (isValidPrice)
+                        {
+                            if (isValidValue)
+                            {
+
+                                // Good code goes here
+                                
+                                //set user entered data to objects
+                                newItem.ItemName = itemNameTextBox.Text;
+                                newItem.ItemDescription = itemDescriptionTextBox.Text;
+                                newItem.ItemOriginalPrice = inputPrice;
+                                newItem.ItemCurrentValue = inputValue;
+                                newItem.ItemProfit = (inputValue - inputPrice);
+
+                                //set selected object and send data to listbox
+                                selectedCollection.AddItems(newItem);
+                                selectedCollectionItem = newItem;
+                                itemsListBox.SelectedItem = selectedCollectionItem;
+
+                                //Update GUI
+                                RefreshDisplay();
+
+                                //Reset for next entry
+                                ClearCollectionBoxes();
+                                ClearItemBoxes();
+
+                                //Error messages clear and refocus for user
+                            }
+                            else
+                            {
+                                MessageBox.Show("Please enter a valid numeric Current Value.");
+                                currentValueTextBox.Clear();
+                                currentValueTextBox.Focus();
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Please enter a valid numeric Original Price.");
+                            originalPriceTextBox.Clear();
+                            originalPriceTextBox.Focus();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please enter a valid Item Description");
+                        itemDescriptionTextBox.Clear();
+                        itemDescriptionTextBox.Focus();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a valid Item Name");
+                    itemNameTextBox.Clear();
+                    itemNameTextBox.Focus();
+                }
+            }
+            else
+            {
+                MessageBox.Show("You must select a Collection that the item belongs to first.");
+            }
         }
 
         private void clearItemButton_Click(object sender, EventArgs e)
@@ -191,7 +269,8 @@ namespace CollectionInventory
                 itemNameTextBox.Text = selectedCollectionItem.ItemName;
                 itemDescriptionTextBox.Text = selectedCollectionItem.ItemDescription;
                 originalPriceTextBox.Text = "$" + selectedCollectionItem.ItemOriginalPrice.ToString();
-                currentValueTextBox.Text = "$" + selectedCollectionItem.ItemProfit.ToString();
+                currentValueTextBox.Text = "$" + selectedCollectionItem.ItemCurrentValue.ToString();
+                profitTextBox.Text = "$" + selectedCollectionItem.ItemProfit.ToString();
 
                 ColoredProfit();
 
@@ -234,26 +313,29 @@ namespace CollectionInventory
         {
             //Changes the background color of the profit textbox to green, red, or silver color based on positive,
             // negative, or no profit
-            //if (selectedItem.Profit < 0)
-            //{
-            //    profitTextBox.BackColor = Color.Red;
-            //} else if (selectedItem.Profit == 0)
-            //{
-            //    profitTextBox.BackColor = Color.Silver;
-            //} else if (selectedItem.Profit > 0)
-            //{
-            //    profitTextBox.BackColor = Color.LightGreen;
-            //} else
-            //{
-            //    profitTextBox.BackColor = Color.MediumTurquoise;
-            //}
+            if (selectedCollectionItem.ItemProfit < 0)
+            {
+                profitTextBox.BackColor = Color.Red;
+            }
+            else if (selectedCollectionItem.ItemProfit == 0)
+            {
+                profitTextBox.BackColor = Color.Silver;
+            }
+            else if (selectedCollectionItem.ItemProfit > 0)
+            {
+                profitTextBox.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                profitTextBox.BackColor = Color.MediumTurquoise;
+            }
         }
 
         private void RefreshDisplay()
         {
             //Refresh function used for displaying current data, can be called
             DisplayCollections();
-            //DisplayItems();
+            DisplayItems();
         }
 
         private void DisplayCollections()
@@ -267,6 +349,28 @@ namespace CollectionInventory
                 collectionsListBox.SelectedItem = selectedCollection;
                 cNameTextBox.Text = selectedCollection.CollectionName;
                 cDescriptionTextBox.Text = selectedCollection.CollectionDescription;
+            }
+        }
+
+        private void DisplayItems()
+        {
+            //Displays every item associated with a collection, can associate multiple items with a collection
+            itemsList.Clear();
+
+            foreach (Items item in selectedCollection.getItems())
+            {
+                itemsList.Add(item);
+                selectedCollectionItem = item;
+            }
+
+            if (selectedCollectionItem != null)
+            {
+                itemsListBox.SelectedItem = selectedCollectionItem;
+                itemNameTextBox.Text = selectedCollectionItem.ItemName;
+                itemDescriptionTextBox.Text = selectedCollectionItem.ItemDescription;
+                originalPriceTextBox.Text = "$" + selectedCollectionItem.ItemOriginalPrice.ToString();
+                currentValueTextBox.Text = "$" + selectedCollectionItem.ItemCurrentValue.ToString();
+                profitTextBox.Text = "$" + selectedCollectionItem.ItemProfit.ToString();
             }
         }
     }
