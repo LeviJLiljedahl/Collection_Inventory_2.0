@@ -80,7 +80,7 @@
             collectionGroupBox.Name = "collectionGroupBox";
             collectionGroupBox.Padding = new Padding(4);
             collectionGroupBox.Size = new Size(385, 296);
-            collectionGroupBox.TabIndex = 0;
+            collectionGroupBox.TabIndex = 3;
             collectionGroupBox.TabStop = false;
             collectionGroupBox.Text = "Add information about your collection";
             // 
@@ -91,7 +91,7 @@
             deleteCollectionButton.Margin = new Padding(4);
             deleteCollectionButton.Name = "deleteCollectionButton";
             deleteCollectionButton.Size = new Size(118, 41);
-            deleteCollectionButton.TabIndex = 4;
+            deleteCollectionButton.TabIndex = 7;
             deleteCollectionButton.Text = "Delete";
             deleteCollectionButton.UseVisualStyleBackColor = false;
             deleteCollectionButton.Click += deleteCollectionButton_Click;
@@ -103,7 +103,7 @@
             clearCollectionButton.Margin = new Padding(4);
             clearCollectionButton.Name = "clearCollectionButton";
             clearCollectionButton.Size = new Size(118, 41);
-            clearCollectionButton.TabIndex = 3;
+            clearCollectionButton.TabIndex = 6;
             clearCollectionButton.Text = "Clear Boxes";
             clearCollectionButton.UseVisualStyleBackColor = false;
             clearCollectionButton.Click += clearCollectionButton_Click;
@@ -115,7 +115,7 @@
             addCollectionButton.Margin = new Padding(4);
             addCollectionButton.Name = "addCollectionButton";
             addCollectionButton.Size = new Size(118, 41);
-            addCollectionButton.TabIndex = 2;
+            addCollectionButton.TabIndex = 5;
             addCollectionButton.Text = "Add Collection";
             addCollectionButton.UseVisualStyleBackColor = false;
             addCollectionButton.Click += addCollectionButton_Click;
@@ -131,7 +131,7 @@
             collectionsGroupBox.Name = "collectionsGroupBox";
             collectionsGroupBox.Padding = new Padding(4);
             collectionsGroupBox.Size = new Size(371, 105);
-            collectionsGroupBox.TabIndex = 1;
+            collectionsGroupBox.TabIndex = 2;
             collectionsGroupBox.TabStop = false;
             collectionsGroupBox.Text = "Collection Information";
             // 
@@ -141,7 +141,7 @@
             cDescriptionTextBox.Location = new Point(115, 65);
             cDescriptionTextBox.Name = "cDescriptionTextBox";
             cDescriptionTextBox.Size = new Size(249, 25);
-            cDescriptionTextBox.TabIndex = 3;
+            cDescriptionTextBox.TabIndex = 4;
             // 
             // cNameTextBox
             // 
@@ -149,7 +149,7 @@
             cNameTextBox.Location = new Point(115, 26);
             cNameTextBox.Name = "cNameTextBox";
             cNameTextBox.Size = new Size(249, 25);
-            cNameTextBox.TabIndex = 2;
+            cNameTextBox.TabIndex = 3;
             // 
             // cDescriptionLabel
             // 
@@ -180,7 +180,7 @@
             OwnersGroupBox.Name = "OwnersGroupBox";
             OwnersGroupBox.Padding = new Padding(4);
             OwnersGroupBox.Size = new Size(371, 105);
-            OwnersGroupBox.TabIndex = 0;
+            OwnersGroupBox.TabIndex = 1;
             OwnersGroupBox.TabStop = false;
             OwnersGroupBox.Text = "Owner's Information";
             // 
@@ -190,7 +190,7 @@
             lastNameTextBox.Location = new Point(116, 59);
             lastNameTextBox.Name = "lastNameTextBox";
             lastNameTextBox.Size = new Size(248, 25);
-            lastNameTextBox.TabIndex = 3;
+            lastNameTextBox.TabIndex = 2;
             // 
             // firstNameTextBox
             // 
@@ -198,7 +198,7 @@
             firstNameTextBox.Location = new Point(116, 22);
             firstNameTextBox.Name = "firstNameTextBox";
             firstNameTextBox.Size = new Size(248, 25);
-            firstNameTextBox.TabIndex = 2;
+            firstNameTextBox.TabIndex = 1;
             // 
             // lastNameLabel
             // 
@@ -229,6 +229,7 @@
             collectionsListBox.Name = "collectionsListBox";
             collectionsListBox.Size = new Size(195, 274);
             collectionsListBox.TabIndex = 1;
+            collectionsListBox.TabStop = false;
             collectionsListBox.SelectedIndexChanged += collectionsListBox_SelectedIndexChanged;
             // 
             // itemGroupBox
@@ -249,7 +250,7 @@
             itemGroupBox.Location = new Point(13, 316);
             itemGroupBox.Name = "itemGroupBox";
             itemGroupBox.Size = new Size(385, 294);
-            itemGroupBox.TabIndex = 2;
+            itemGroupBox.TabIndex = 4;
             itemGroupBox.TabStop = false;
             itemGroupBox.Text = "Add an item to your collection";
             // 
@@ -259,7 +260,7 @@
             deleteItemButton.Location = new Point(254, 247);
             deleteItemButton.Name = "deleteItemButton";
             deleteItemButton.Size = new Size(118, 41);
-            deleteItemButton.TabIndex = 12;
+            deleteItemButton.TabIndex = 14;
             deleteItemButton.Text = "Delete Item";
             deleteItemButton.UseVisualStyleBackColor = false;
             deleteItemButton.Click += deleteItemButton_Click;
@@ -270,7 +271,7 @@
             clearItemButton.Location = new Point(130, 247);
             clearItemButton.Name = "clearItemButton";
             clearItemButton.Size = new Size(118, 41);
-            clearItemButton.TabIndex = 11;
+            clearItemButton.TabIndex = 13;
             clearItemButton.Text = "Clear Boxes";
             clearItemButton.UseVisualStyleBackColor = false;
             clearItemButton.Click += clearItemButton_Click;
@@ -281,7 +282,7 @@
             addItemButton.Location = new Point(6, 247);
             addItemButton.Name = "addItemButton";
             addItemButton.Size = new Size(118, 41);
-            addItemButton.TabIndex = 10;
+            addItemButton.TabIndex = 12;
             addItemButton.Text = "Add Item";
             addItemButton.UseVisualStyleBackColor = false;
             addItemButton.Click += addItemButton_Click;
@@ -296,6 +297,7 @@
             profitTextBox.Name = "profitTextBox";
             profitTextBox.Size = new Size(249, 25);
             profitTextBox.TabIndex = 9;
+            profitTextBox.TabStop = false;
             // 
             // currentValueTextBox
             // 
@@ -303,7 +305,7 @@
             currentValueTextBox.Location = new Point(121, 164);
             currentValueTextBox.Name = "currentValueTextBox";
             currentValueTextBox.Size = new Size(249, 25);
-            currentValueTextBox.TabIndex = 8;
+            currentValueTextBox.TabIndex = 11;
             // 
             // originalPriceTextBox
             // 
@@ -311,7 +313,7 @@
             originalPriceTextBox.Location = new Point(121, 120);
             originalPriceTextBox.Name = "originalPriceTextBox";
             originalPriceTextBox.Size = new Size(249, 25);
-            originalPriceTextBox.TabIndex = 7;
+            originalPriceTextBox.TabIndex = 10;
             // 
             // itemDescriptionTextBox
             // 
@@ -319,7 +321,7 @@
             itemDescriptionTextBox.Location = new Point(121, 76);
             itemDescriptionTextBox.Name = "itemDescriptionTextBox";
             itemDescriptionTextBox.Size = new Size(249, 25);
-            itemDescriptionTextBox.TabIndex = 6;
+            itemDescriptionTextBox.TabIndex = 9;
             // 
             // itemNameTextBox
             // 
@@ -327,7 +329,7 @@
             itemNameTextBox.Location = new Point(121, 32);
             itemNameTextBox.Name = "itemNameTextBox";
             itemNameTextBox.Size = new Size(249, 25);
-            itemNameTextBox.TabIndex = 5;
+            itemNameTextBox.TabIndex = 8;
             // 
             // profitLabel
             // 
@@ -383,6 +385,7 @@
             itemsListBox.Name = "itemsListBox";
             itemsListBox.Size = new Size(195, 274);
             itemsListBox.TabIndex = 3;
+            itemsListBox.TabStop = false;
             itemsListBox.SelectedIndexChanged += itemsListBox_SelectedIndexChanged;
             // 
             // databaseTextBox
@@ -392,7 +395,7 @@
             databaseTextBox.Location = new Point(12, 616);
             databaseTextBox.Name = "databaseTextBox";
             databaseTextBox.Size = new Size(587, 77);
-            databaseTextBox.TabIndex = 4;
+            databaseTextBox.TabIndex = 5;
             databaseTextBox.TabStop = false;
             databaseTextBox.Text = "Select an Item and its Collection. Then Save it to the Database";
             // 
@@ -402,7 +405,7 @@
             deleteFromDatabaseTextBox.Location = new Point(327, 26);
             deleteFromDatabaseTextBox.Name = "deleteFromDatabaseTextBox";
             deleteFromDatabaseTextBox.Size = new Size(184, 41);
-            deleteFromDatabaseTextBox.TabIndex = 1;
+            deleteFromDatabaseTextBox.TabIndex = 16;
             deleteFromDatabaseTextBox.Text = "Delete From Database";
             deleteFromDatabaseTextBox.UseVisualStyleBackColor = false;
             deleteFromDatabaseTextBox.Click += deleteFromDatabaseTextBox_Click;
@@ -413,7 +416,7 @@
             saveToDatabaseButton.Location = new Point(72, 26);
             saveToDatabaseButton.Name = "saveToDatabaseButton";
             saveToDatabaseButton.Size = new Size(184, 41);
-            saveToDatabaseButton.TabIndex = 0;
+            saveToDatabaseButton.TabIndex = 15;
             saveToDatabaseButton.Text = "Save to Database";
             saveToDatabaseButton.UseVisualStyleBackColor = false;
             saveToDatabaseButton.Click += saveToDatabaseButton_Click;

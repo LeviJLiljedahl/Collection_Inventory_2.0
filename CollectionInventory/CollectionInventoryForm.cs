@@ -15,7 +15,7 @@ namespace CollectionInventory
     {
         //class scoped variables
         private Collections selectedCollection;
-        private Items selectedItem;
+        private Items selectedCollectionItem;
 
         private BindingList<Collections> collectionsList = new BindingList<Collections>();
         private BindingList<Items> itemsList = new BindingList<Items>();
@@ -32,6 +32,8 @@ namespace CollectionInventory
             itemsListBox.DataSource = itemsList;
 
             //DatabaseReload()
+
+            firstNameTextBox.Focus();
 
         }
 
@@ -116,16 +118,32 @@ namespace CollectionInventory
 
                 RefreshDisplay();
                 ClearCollectionBoxes();
+                ClearItemBoxes();
             } 
             else
             {
-                MessageBox.Show("You must select a budget category to delte");
+                MessageBox.Show("You must select a Collection to remove");
             }
         }
 
         private void collectionsListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (collectionsListBox.SelectedItem != null)
+            {
+                selectedCollection = (Collections)(collectionsListBox.SelectedItem);
 
+                itemsList.Clear();
+
+                foreach (Items items in selectedCollection.getItems())
+                {
+                    itemsList.Add(items);
+                    selectedCollectionItem = items;
+                    itemsListBox.SelectedItem = items;
+
+                }
+
+                RefreshDisplay();
+            }
         }
 
         private void addItemButton_Click(object sender, EventArgs e)
@@ -142,12 +160,42 @@ namespace CollectionInventory
 
         private void deleteItemButton_Click(object sender, EventArgs e)
         {
+            if(selectedCollection != null)
+            {
+                if (itemsListBox.SelectedItem != null)
+                {
+                    selectedCollection.RemoveItems(selectedCollectionItem);
 
+                    RefreshDisplay();
+                    ClearCollectionBoxes();
+                    ClearItemBoxes();
+
+                }
+                else
+                {
+                    MessageBox.Show("You must select an Item to remove");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a collection");
+            }
         }
 
         private void itemsListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (itemsListBox.SelectedItem != null)
+            {
+                selectedCollectionItem = (Items)(itemsListBox.SelectedItem);
 
+                itemNameTextBox.Text = selectedCollectionItem.ItemName;
+                itemDescriptionTextBox.Text = selectedCollectionItem.ItemDescription;
+                originalPriceTextBox.Text = "$" + selectedCollectionItem.ItemOriginalPrice.ToString();
+                currentValueTextBox.Text = "$" + selectedCollectionItem.ItemProfit.ToString();
+
+                ColoredProfit();
+
+            }
         }
 
         private void saveToDatabaseButton_Click(object sender, EventArgs e)
