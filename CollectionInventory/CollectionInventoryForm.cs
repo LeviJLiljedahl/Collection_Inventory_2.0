@@ -8,6 +8,7 @@
 
 using System.ComponentModel;
 using System.Drawing.Text;
+using System.Windows.Forms;
 
 namespace CollectionInventory
 {
@@ -279,12 +280,12 @@ namespace CollectionInventory
 
         private void saveToDatabaseButton_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Under Construction, more to come soon!");
         }
 
         private void deleteFromDatabaseTextBox_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Under Construction, more to come soon!");
         }
 
         private void ClearCollectionBoxes()
