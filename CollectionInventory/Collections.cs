@@ -2,11 +2,6 @@
 //Date: 03/29/2024
 //Purpose: Manage the collections that belong to owners and are made of items
 
-
-/////////// ****************** MAY NEED WORK *********************************
-///
-
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,8 +57,6 @@ namespace CollectionInventory
 
         public string CollectionDescription 
             {  get { return mCollectionDescription; } set { mCollectionDescription = value; } }
-
-
 
         public override string ToString()
         {

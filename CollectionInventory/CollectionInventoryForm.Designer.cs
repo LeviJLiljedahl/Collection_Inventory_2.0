@@ -224,6 +224,7 @@
             // 
             collectionsListBox.Font = new Font("Garamond", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             collectionsListBox.FormattingEnabled = true;
+            collectionsListBox.HorizontalScrollbar = true;
             collectionsListBox.ItemHeight = 18;
             collectionsListBox.Location = new Point(404, 25);
             collectionsListBox.Name = "collectionsListBox";
@@ -380,6 +381,7 @@
             // 
             itemsListBox.Font = new Font("Garamond", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             itemsListBox.FormattingEnabled = true;
+            itemsListBox.HorizontalScrollbar = true;
             itemsListBox.ItemHeight = 18;
             itemsListBox.Location = new Point(404, 326);
             itemsListBox.Name = "itemsListBox";

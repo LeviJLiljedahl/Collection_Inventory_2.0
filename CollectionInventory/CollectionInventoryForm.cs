@@ -4,7 +4,7 @@
 //Chippewa Valley Technical College. But the project was initially written in Visual Basic,
 //here I am converting the project to C#. Collection_Inventory is a .NET app written in C# that
 //allows multiple users to inventory their various collections of different objects ' and add
-//various items into that collection. Use a database to store this information.
+//various items into that collection. Use a database to store this information., Database functionality to come soon.
 
 using System.ComponentModel;
 using System.Drawing.Text;

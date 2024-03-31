@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|c:\\users\\levij\\onedrive - chippewa valley technical college\\desktop\\projects\\collectioninventory\\collectioninventory\\collectioninventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|solutionrelative:collectioninventory\\collectioninventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\collectioninventory\\collectioninventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|solutionrelative:collectioninventory\\collectioninventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\collectioninventory\\collections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|solutionrelative:collectioninventory\\collections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|c:\\users\\levij\\onedrive - chippewa valley technical college\\desktop\\projects\\collectioninventory\\collectioninventory\\collectioninventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44AF4279-98D2-4370-B8D8-B7C954C0EA86}|CollectionInventory\\CollectionInventory.csproj|solutionrelative:collectioninventory\\collectioninventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,35 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Items.cs",
               "DocumentMoniker": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\CollectionInventory\\Items.cs",
               "RelativeDocumentMoniker": "CollectionInventory\\Items.cs",
               "ToolTip": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\CollectionInventory\\Items.cs",
               "RelativeToolTip": "CollectionInventory\\Items.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAiwEIAAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T18:29:36.963Z"
+              "WhenOpened": "2024-03-29T18:29:36.963Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Collections.cs",
               "DocumentMoniker": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\CollectionInventory\\Collections.cs",
               "RelativeDocumentMoniker": "CollectionInventory\\Collections.cs",
               "ToolTip": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\CollectionInventory\\Collections.cs",
               "RelativeToolTip": "CollectionInventory\\Collections.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAUwEMAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T18:29:11.338Z"
+              "WhenOpened": "2024-03-29T18:29:11.338Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CollectionInventoryForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\CollectionInventory\\CollectionInventoryForm.cs",
               "RelativeDocumentMoniker": "CollectionInventory\\CollectionInventoryForm.cs",
@@ -66,13 +68,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CollectionInventoryForm.cs",
               "DocumentMoniker": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\CollectionInventory\\CollectionInventoryForm.cs",
               "RelativeDocumentMoniker": "CollectionInventory\\CollectionInventoryForm.cs",
               "ToolTip": "C:\\Users\\levij\\OneDrive - Chippewa Valley Technical College\\Desktop\\Projects\\CollectionInventory\\CollectionInventory\\CollectionInventoryForm.cs",
               "RelativeToolTip": "CollectionInventory\\CollectionInventoryForm.cs",
-              "ViewState": "AQIAAAoBAAAAAAAAAAAewB8BAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-28T22:29:02.385Z",
               "EditorCaption": ""
